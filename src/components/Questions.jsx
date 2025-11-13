@@ -108,6 +108,16 @@ export default function Questions({onEndGame}) {
             </button>
           );
         })}
+        </div>
+      {showFeedback && (
+        <button className="next-btn" onClick={handleNextQuestion}>
+          {currentQuestionIndex + 1 < questions.length
+            ? "Next Question"
+            : "Finish Quiz"}
+        </button>
+      )}
+      <div className="score-display">
+        <p>Current Score: {score}</p>
       </div>
       </div>
     )
