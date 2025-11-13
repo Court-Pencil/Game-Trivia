@@ -23,7 +23,7 @@ export default function EndScreen({onRestart, results}) {
         Your Score: {score} out of {total}
       </p>
       <p className="percentage">Percentage: {percentage}%</p>
-      <button className="restart-btn" onClick={onRestart}>Restart Quiz</button>
+      <button className="restart-btn" onClick={onRestart}>Play again</button>
     </div>
 
   )
