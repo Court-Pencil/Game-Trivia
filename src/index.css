@@ -299,3 +299,86 @@ body {
     box-shadow: 0 0 2rem #ffff33;
   }
 } */
+
+
+
+@media (min-width: 600px) {
+  .start-h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+  }
+  .start-text {
+    font-size: 1.4rem;
+    margin-bottom: 3.5rem;
+  }
+  .start-btn {
+    font-size: 1.4rem;
+    padding: 1.2rem 2.4rem;
+  }
+  .question-text h2 {
+    font-size: 1.8rem;
+  }
+  .quiz-container {
+    padding: 3rem;
+    border-width: 0.5rem;
+  }
+
+  .end-title {
+    font-size: 4rem;
+  }
+
+  .end-message {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem 0;
+  }
+
+  .score-text {
+    font-size: 1.6rem;
+  }
+
+  .score-text strong {
+    font-size: 1.8rem;
+  }
+  .percentage {
+    font-size: 2rem;
+      margin: 2rem 0 3rem 0;
+  }
+  .restart-btn {
+    font-size: 1.6rem;
+    padding: 1.4rem 3rem;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .start-h1 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .start-text {
+    font-size: 1.75rem;
+    margin-bottom: 4rem;
+  }
+
+  .start-btn {
+    font-size: 1.6rem;
+    padding: 1.5rem 3rem;
+  }
+
+  .quiz-container {
+    max-width: 70rem;
+  }
+
+  .question-counter {
+    font-size: 1.5rem;
+  }
+
+  .answer-btn {
+    font-size: 1.4rem;
+  }
+
+  .score-display {
+    font-size: 1.6rem;
+  }
+}
