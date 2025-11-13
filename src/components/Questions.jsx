@@ -82,7 +82,6 @@ export default function Questions({ onGameEnd }) {
 
   return (
     <div className="quiz-container">
-      <h1>Video Game Trivia</h1>
       <div className="question-counter">
         <span>
           Question {currentQuestionIndex + 1} of {questions.length}{" "}

@@ -53,7 +53,7 @@ body {
 }
 
 .start-h1 {
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: #ffff33;
   text-shadow: 0 0 0.8rem #ffff33;
   margin-bottom: 1.2rem;
@@ -63,7 +63,7 @@ body {
 
 .start-text {
   color: #00ffff;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 3rem;
   line-height: 1.6;
   text-shadow: 0 0 0.6rem #00ffff;
@@ -209,7 +209,6 @@ body {
   color: #ffff33;
 }
 
-
 .end-screen {
   display: flex;
   flex-direction: column;
@@ -221,6 +220,15 @@ body {
   background-color: #000010;
   color: #ffff33;
   animation: fadeIn 1s ease;
+}
+
+.end-title {
+  font-size: 2.5rem;
+  color: #ffff33;
+  text-shadow: 0 0 0.8rem #ffff33;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.6;
 }
 
 .score-box {
@@ -236,25 +244,22 @@ body {
 .score-text {
   font-size: 1.4rem;
   color: #00ffff;
-  margin-bottom: 1rem;
-}
-
-.score-text strong {
-  color: #ffff33;
-  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 .percentage {
   font-size: 1.4rem;
   color: #ffff33;
   margin: 2rem 1rem;
+  line-height: 1.6;
 }
 
 
 .end-message {
   font-size: 1.4rem;
   color: #00ffff;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 
@@ -289,18 +294,6 @@ body {
     transform: translateY(0);
   }
 }
-
-/* @keyframes borderPulse {
-  0%,
-  100% {
-    box-shadow: 0 0 1rem #00ffff;
-  }
-  50% {
-    box-shadow: 0 0 2rem #ffff33;
-  }
-} */
-
-
 
 @media (min-width: 600px) {
   .start-h1 {
