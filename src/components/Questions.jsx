@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 
-export default function Questions() {
-    return {
-        Questions
-    }
+export default function Questions({onEndGame}) {
+
+    return (
+        <div> Questions </div>
+    )
 }
