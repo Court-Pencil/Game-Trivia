@@ -88,3 +88,15 @@ body {
   color: #000010;
   box-shadow: 0 0 1.5rem #00ffff;
 }
+
+.quiz-container {
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 0.4rem solid #00ffff;
+  border-radius: 1rem;
+  background: radial-gradient(circle at center, #000020 0%, #000010 100%);
+  box-shadow: 0 0 2rem #00ffff55;
+  animation: borderPulse 2s infinite;
+}
