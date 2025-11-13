@@ -125,3 +125,43 @@ body {
   gap: 1.2rem;
   margin-bottom: 2rem;
 }
+
+
+.answer-btn {
+  background-color: #000020;
+  color: #ffff33;
+  border: 0.2rem solid #00ffff;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0.8rem #00ffff33;
+}
+
+.answer-btn:hover:not(:disabled) {
+  background-color: #00ffff;
+  color: #000010;
+  box-shadow: 0 0 1.2rem #00ffff;
+  transform: scale(1.03);
+}
+
+.answer-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.answer-btn.correct {
+  background-color: #22c55e;
+  color: #000010;
+  border-color: #22c55e;
+  box-shadow: 0 0 1rem #22c55e;
+}
+
+.answer-btn.incorrect {
+  background-color: #ef4444;
+  color: #000010;
+  border-color: #ef4444;
+  box-shadow: 0 0 1rem #ef4444;
+}
+
