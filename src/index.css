@@ -101,7 +101,16 @@ body {
   animation: borderPulse 2s infinite;
 }
 
-/* animation goes here */
+@keyframes borderPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0.8rem #00ffff;
+  }
+  50% {
+    box-shadow: 0 0 2rem #ffff33;
+  }
+}
+
 
 .question-counter {
   color: #00ffff;
