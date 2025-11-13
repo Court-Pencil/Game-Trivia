@@ -57,6 +57,20 @@ export default function Questions({onEndGame}) {
     }
   };
 
+  const handleNextQuestion = () => {
+    const nextQuestion = currentQuestionIndex + 1;
+    setSelectedAnswer(null);
+    setShowFeedback(false);
+    if (nextQuestion < questions.length) {
+      setCurrentQuestionIndex(nextQuestion);
+    } else {
+      onGameEnd({
+        score,
+        total: questions.length,
+      });
+    }
+  };
+
     return (
          <div className="quiz-container">
       <h1>Video Game Trivia</h1>
