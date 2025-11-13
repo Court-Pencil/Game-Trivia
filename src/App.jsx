@@ -14,9 +14,14 @@ export default function App() {
     setStage('results');
   }
   return (
-    <>
-      Video Game Trivia
-    </>
+   <div className="App">
+      {stage === 'start' && (
+        <Start onStart={() => setStage('quiz')} />
+      
+      )}
+      {stage === 'quiz' && <Questions onGameEnd={handleGameEnd} />}
+       {stage === 'results' && <EndScreen onRestart={() => setStage('start')} results={results} />}
+    </div>
   )
 }
 
