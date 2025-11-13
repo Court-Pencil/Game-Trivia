@@ -208,3 +208,72 @@ body {
   font-size: 2rem;
   color: #ffff33;
 }
+
+
+.end-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #000010;
+  color: #ffff33;
+  animation: fadeIn 1s ease;
+}
+
+.score-box {
+  border: 0.3rem solid #00ffff;
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  background: radial-gradient(circle at center, #000020 0%, #000010 100%);
+  box-shadow: 0 0 2rem #00ffff55;
+  margin-bottom: 2.5rem;
+  animation: borderPulse 2s infinite;
+}
+
+.score-text {
+  font-size: 1.4rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.score-text strong {
+  color: #ffff33;
+  font-size: 1.6rem;
+}
+
+.percentage {
+  font-size: 1.4rem;
+  color: #ffff33;
+  margin: 2rem 1rem;
+}
+
+
+.end-message {
+  font-size: 1.4rem;
+  color: #00ffff;
+  margin-bottom: 3rem;
+}
+
+
+.restart-btn {
+  background-color: #000020;
+  color: #00ffff;
+  border: 0.3rem solid #00ffff;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 1rem #00ffff55;
+  align-self: center;
+}
+
+.restart-btn:hover {
+  background-color: #00ffff;
+  color: #000010;
+  box-shadow: 0 0 1.5rem #00ffff;
+  transform: scale(1.05);
+}
