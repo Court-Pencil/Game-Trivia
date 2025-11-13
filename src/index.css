@@ -165,3 +165,37 @@ body {
   box-shadow: 0 0 1rem #ef4444;
 }
 
+
+.next-btn {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #000020;
+  color: #ffff33;
+  border: 0.2rem solid #ffff33;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  box-shadow: 0 0 1rem #ffff3355;
+}
+
+.next-btn:hover {
+  background-color: #ffff33;
+  color: #000010;
+  box-shadow: 0 0 1.5rem #ffff33;
+}
+
+.score-display {
+  text-align: center;
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  color: #00ffff;
+}
+
+.score-display strong {
+  display: block;
+  margin-top: 1.2rem;
+  font-size: 2rem;
+  color: #ffff33;
+}
