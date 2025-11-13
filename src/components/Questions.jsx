@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
-export default function Questions({onEndGame}) {
-     const [questions, setQuestions] = useState([]);
+export default function Questions({ onGameEnd }) {
+  const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null);
@@ -15,6 +15,7 @@ export default function Questions({onEndGame}) {
     return textArea.value;
   };
 
+  
   useEffect(() => {const fetchData = async () => {
     try {
       const response = await fetch(
@@ -47,7 +48,7 @@ export default function Questions({onEndGame}) {
     console.log("useEffect called");
   }, []);
 
-   const handleAnswerClick = (answer) => {
+  const handleAnswerClick = (answer) => {
     if (selectedAnswer) return;
     setSelectedAnswer(answer);
     setShowFeedback(true);
@@ -71,8 +72,16 @@ export default function Questions({onEndGame}) {
     }
   };
 
-    return (
-         <div className="quiz-container">
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div> Error: {error}</div>;
+  }
+
+  return (
+    <div className="quiz-container">
       <h1>Video Game Trivia</h1>
       <div className="question-counter">
         <span>
@@ -83,6 +92,7 @@ export default function Questions({onEndGame}) {
       <div className="question-text">
         <h2>{questions[currentQuestionIndex].question}</h2>
       </div>
+
       <div className="answer-buttons">
         {questions[currentQuestionIndex].all_answers.map((answer, index) => {
           const isCorrect =
@@ -108,7 +118,7 @@ export default function Questions({onEndGame}) {
             </button>
           );
         })}
-        </div>
+      </div>
       {showFeedback && (
         <button className="next-btn" onClick={handleNextQuestion}>
           {currentQuestionIndex + 1 < questions.length
@@ -119,6 +129,6 @@ export default function Questions({onEndGame}) {
       <div className="score-display">
         <p>Current Score: {score}</p>
       </div>
-      </div>
-    )
+    </div>
+  );
 }
