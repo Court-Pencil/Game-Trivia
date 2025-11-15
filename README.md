@@ -233,7 +233,7 @@ This feature encourages replayability and adds a competitive edge, perfect for s
 
 To ensure a smooth experience across devices, I tested the quiz app early and often using a mobile-first approach. I relied on Chrome DevTools to simulate various screen sizes during development, checking layout, navigation, and interactive behavior. After deployment, I used Am I Responsive to preview the live site across multiple breakpoints and identify any layout inconsistencies.
 
-# User Story BDD Testing
+### User Story BDD Testing
 
 ---
 
@@ -337,8 +337,10 @@ I have used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
 
 ### HTML
 
-### Javascript
+### Javascript 
 
+Reactjs code validated by [ESlint](https://eslint.org/). 1 error indentfied.
+![React.js Validation image](src\docs\eslint-validation.png)
 
 ## Accessibility Testing
 
