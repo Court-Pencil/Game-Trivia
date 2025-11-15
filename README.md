@@ -104,14 +104,17 @@ I used [Contrast Grid](https://contrast-grid.eightshapes.com/ "Contrast Grid") t
 // THIS NEEDS REDOING//
 
 
-
-
-### Images
-
-
-
 ### Responsiveness
 
+My website is repsonsive to all screen sizes. 
+| Breakpoint | Class infix | Dimensions | | |
+|-------------------|-------------|------------|---|---|
+| Extra small | None | <576px | | |
+| Small | sm | ≥576px | | |
+| Medium | md | ≥768px | | |
+| Large | lg | ≥992px | | |
+| Extra large | xl | ≥1200px | | |
+| Extra extra large | xxl | ≥1400px | | |
 
 
 ## Features
