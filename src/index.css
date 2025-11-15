@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
+:root{
+  --neon-yellow: #ffff33;
+  --neon-blue: #00ffff;
+  --teal: #00ffff55;
+  --black: #000010;
+  --navy: #000020;
+  --green: #22c55e;
+  --red: #ef4444;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,8 +31,8 @@ button,
 }
 
 body {
-  background-color: #000010;
-  color: #ffff33;
+  background-color: var(--black);
+  color: var(--neon-yellow);
   font-family: "Press Start 2P", cursive;
   min-height: 100vh;
 }
@@ -36,7 +46,7 @@ body {
   text-align: center;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #000010;
+  background-color: var(--black);
   overflow: hidden;
 }
 
@@ -53,39 +63,39 @@ body {
 
 .start-h1 {
   font-size: 2.75rem;
-  color: #ffff33;
-  text-shadow: 0 0 0.8rem #ffff33;
+  color: var(--neon-yellow);
+  text-shadow: 0 0 0.8rem var(--neon-yellow);
   margin-bottom: 1.2rem;
   letter-spacing: 0.2rem;
   line-height: 1.6;
 }
 
 .start-text {
-  color: #00ffff;
+  color: var(--neon-blue);
   font-size: 1.3rem;
   margin-bottom: 3rem;
   line-height: 1.6;
-  text-shadow: 0 0 0.6rem #00ffff;
+  text-shadow: 0 0 0.6rem var(--neon-blue);
 }
 
 
 .start-btn {
-  background-color: #000020;
-  color: #00ffff;
-  border: 0.3rem solid #00ffff;
+  background-color: var(--navy);
+  color: var(--neon-blue);
+  border: 0.3rem solid var(--neon-blue);
   padding: 1rem 2rem;
   font-size: 1.2rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 0 1rem #00ffff55;
+  box-shadow: 0 0 1rem var(--teal);
   align-self: center;
 }
 
 .start-btn:hover {
-  background-color: #00ffff;
-  color: #000010;
-  box-shadow: 0 0 1.5rem #00ffff;
+  background-color: var(--neon-blue);
+  color: var(--black);
+  box-shadow: 0 0 1.5rem var(--neon-blue);
 }
 
 .quiz-container {
@@ -93,26 +103,26 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
-  border: 0.4rem solid #00ffff;
+  border: 0.4rem solid var(--neon-blue);
   border-radius: 1rem;
-  background: radial-gradient(circle at center, #000020 0%, #000010 100%);
-  box-shadow: 0 0 2rem #00ffff55;
+  background: radial-gradient(circle at center, var(--navy) 0%, var(--black) 100%);
+  box-shadow: 0 0 2rem var(--teal);
   animation: borderPulse 2s infinite;
 }
 
 @keyframes borderPulse {
   0%,
   100% {
-    box-shadow: 0 0 0.8rem #00ffff;
+    box-shadow: 0 0 0.8rem var(--neon-blue);
   }
   50% {
-    box-shadow: 0 0 2rem #ffff33;
+    box-shadow: 0 0 2rem var(--neon-yellow);
   }
 }
 
 
 .question-counter {
-  color: #00ffff;
+  color: var(--neon-blue);
   font-size: 1.2rem;
   margin-bottom: 1.25rem;
   margin-top: 1.25rem;
@@ -120,8 +130,8 @@ body {
 
 
 .question-text h2 {
-  font-size: 1.5rem;
-  color: #ffff33;
+  font-size: 1.25rem;
+  color: var(--neon-yellow);
   margin: 1.25rem 0;
   line-height: 1.5;
 }
@@ -136,21 +146,21 @@ body {
 
 
 .answer-btn {
-  background-color: #000020;
-  color: #ffff33;
-  border: 0.2rem solid #00ffff;
+  background-color: var(--navy);
+  color: var(--neon-yellow);
+  border: 0.2rem solid var(--neon-blue);
   padding: 1rem;
   cursor: pointer;
   font-size: 1.2rem;
   text-transform: uppercase;
   transition: all 0.2s ease;
-  box-shadow: 0 0 0.8rem #00ffff33;
+  box-shadow: 0 0 0.8rem var(--teal);
 }
 
 .answer-btn:hover:not(:disabled) {
-  background-color: #00ffff;
-  color: #000010;
-  box-shadow: 0 0 1.2rem #00ffff;
+  background-color: var(--neon-blue);
+  color: var(--black);
+  box-shadow: 0 0 1.2rem var(--neon-blue);
   transform: scale(1.03);
 }
 
@@ -160,15 +170,15 @@ body {
 }
 
 .answer-btn.correct {
-  background-color: #22c55e;
-  color: #000010;
-  box-shadow: 0 0 1rem #22c55e;
+  background-color: var(--green);
+  color: var(--black);
+  box-shadow: 0 0 1rem var(--green);
 }
 
 .answer-btn.incorrect {
-  background-color: #ef4444;
-  color: #000010;
-  box-shadow: 0 0 1rem #ef4444;
+  background-color: var(--red);
+  color: var(--black);
+  box-shadow: 0 0 1rem var(--red);
 }
 
 
@@ -177,9 +187,9 @@ body {
   padding: 1.2rem;
   font-size: 1.4rem;
   font-weight: bold;
-  background-color: #000020;
-  color: #ffff33;
-  border: 0.2rem solid #ffff33;
+  background-color: var(--navy);
+  color: var(--neon-yellow);
+  border: 0.2rem solid var(--neon-yellow);
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.25s ease;
@@ -187,23 +197,23 @@ body {
 }
 
 .next-btn:hover {
-  background-color: #ffff33;
-  color: #000010;
-  box-shadow: 0 0 1.5rem #ffff33;
+  background-color: var(--neon-yellow);
+  color: var(--black);
+  box-shadow: 0 0 1.5rem var(--neon-yellow);
 }
 
 .score-display {
   text-align: center;
   margin-top: 2.5rem;
   font-size: 1.4rem;
-  color: #00ffff;
+  color: var(--neon-blue);
 }
 
 .score-display strong {
   display: block;
   margin-top: 1.2rem;
   font-size: 2rem;
-  color: #ffff33;
+  color: var(--neon-yellow);
 }
 
 .end-screen {
@@ -214,39 +224,39 @@ body {
   text-align: center;
   min-height: 100vh;
   padding: 2rem;
-  background-color: #000010;
-  color: #ffff33;
+  background-color: var(--black);
+  color: var(--neon-yellow);
   animation: fadeIn 1s ease;
 }
 
 .end-title {
   font-size: 2.5rem;
-  color: #ffff33;
-  text-shadow: 0 0 0.8rem #ffff33;
+  color: var(--neon-yellow);
+  text-shadow: 0 0 0.8rem var(--neon-yellow);
   margin-bottom: 1.2rem;
   letter-spacing: 0.2rem;
   line-height: 1.6;
 }
 
 .score-box {
-  border: 0.3rem solid #00ffff;
+  border: 0.3rem solid var(--neon-blue);
   border-radius: 1rem;
   padding: 2rem 3rem;
-  background: radial-gradient(circle at center, #000020 0%, #000010 100%);
-  box-shadow: 0 0 2rem #00ffff55;
+  background: radial-gradient(circle at center, var(--navy) 0%, var(--black) 100%);
+  box-shadow: 0 0 2rem var(--teal);
   margin-bottom: 2.5rem;
   animation: borderPulse 2s infinite;
 }
 
 .score-text {
   font-size: 1.4rem;
-  color: #00ffff;
+  color: var(--neon-blue);
   line-height: 1.6;
 }
 
 .percentage {
   font-size: 1.4rem;
-  color: #ffff33;
+  color: var(--neon-yellow);
   margin: 2rem 1rem;
   line-height: 1.6;
 }
@@ -254,29 +264,29 @@ body {
 
 .end-message {
   font-size: 1.4rem;
-  color: #00ffff;
+  color: var(--neon-blue);
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
 
 
 .restart-btn {
-  background-color: #000020;
-  color: #00ffff;
-  border: 0.3rem solid #00ffff;
+  background-color: var(--navy);
+  color: var(--neon-blue);
+  border: 0.3rem solid var(--neon-blue);
   padding: 1.2rem 2.4rem;
   font-size: 1.4rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 0 1rem #00ffff55;
+  box-shadow: 0 0 1rem var(--teal);
   align-self: center;
 }
 
 .restart-btn:hover {
-  background-color: #00ffff;
-  color: #000010;
-  box-shadow: 0 0 1.5rem #00ffff;
+  background-color: var(--neon-blue);
+  color: var(--black);
+  box-shadow: 0 0 1.5rem var(--neon-blue);
   transform: scale(1.05);
 }
 
@@ -311,6 +321,15 @@ body {
   .quiz-container {
     padding: 3rem;
     border-width: 0.5rem;
+  }
+
+  .question-counter {
+    font-size: 1.4rem;
+  }
+
+  .answer-btn {
+    font-size: 1.3rem;
+    padding: 1.2rem;
   }
 
   .end-title {

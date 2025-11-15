@@ -86,29 +86,26 @@ The Video Game Trivia is an app where you can test your video game knowledge wit
 
 ## Wireframes
 
-**// talk about wireframe of quiz // **
+Wireframes for the quiz were created using Balsamiq, starting with mobile layouts before adapting them for tablet and laptop screens. The wireframes were intentionally simple: a landing page with a title and start button, a quiz screen featuring a question counter, question text, four answer options, a score counter, and a next button, followed by an end screen displaying a completion message, score out of 10, feedback text, and a play-again button. The final design stays close to the wireframes, with small improvements made during development to enhance usability and overall flow. These wireframes acted as a clear foundation for creating a focused and intuitive quiz experience.
 
-The wireframes were designed using Balsamiq. Designed with mobile first practices, tablet and then website. 
-The final design of the Trailblazers site evolved from the original wireframes to create a smoother, more intuitive user experience. While the wireframes helped establish the initial structure—such as homepage layout, events section, and booking form the final version refines these elements for better flow and clarity.  
+### UX Design
 
+The UX design of the quiz focuses on clarity, simplicity, and ease of use to ensure a smooth experience for all users. The interface avoids unnecessary visual clutter, presenting only essential elements such as the current question, answer options, and score, which helps maintain focus and reduce cognitive load. The linear structure—Start → Quiz → Results—provides a clear and intuitive flow, allowing users to navigate the quiz without confusion. Consistent styling, readable typography, and clear visual feedback for correct and incorrect answers enhance user engagement and make the experience more interactive. The end screen delivers a concise summary of the user’s performance along with a motivational message and a replay option, supporting continued participation and learning. Overall, the design prioritises accessibility, responsiveness, and user enjoyment across all devices
 
-
-![Wireframe-Mobile]()
-![Wireframe-Mobile]()
-![Wireframe-Mobile]()
+![Wireframe-Mobile](src\docs\mobile-wireframe.png)
+![Wireframe-Tablet](src\docs\tablet-wireframe.png)
+![Wireframe-Desktop](src\docs\desktop-wireframe.png)
 
 ## Design Choices
 
 ### Typography
-/add more about why i picked the fonts/
-
 
 The font family chosen for the Video Game Trivia website is [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) for the primary font. Lato for the secondary font. These were chosen for replicating nes font to give that retro vibe, to bring a nostaligic feeling to the user.
 
 
 ### Colour Scheme
 
-The colour scheme was chosen based on colours nes Pacman game. The navy blue background and yellow text mirrors the old style PacMan game which i think is something that a lot of people know of.
+The chosen colour scheme is inspired by the classic NES Pac-Man aesthetic, utilising a deep dark background paired with bright yellow text. This contrast not only enhances readability but also evokes a sense of nostalgia that many users instantly recognise. The neon cyan accents further support the retro arcade theme, creating a vibrant and engaging visual style throughout the quiz. Overall, the palette reinforces the gaming atmosphere while maintaining strong clarity and accessibility.
 
 
 ![Coolors scheme](src\docs\quiz-colour-scheme.png)
