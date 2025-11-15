@@ -20,12 +20,13 @@ The Video Game Trivia is an app where you can test your video game knowledge wit
   - [Responsiveness](#responsiveness)
 - [Features](#features)
   - [Existing Features](#existing-features)
-    - [Header](#header)
-    - [Landing View](#landing-view)
-    - [Events](#events)
-    - [Gallery](#gallery)
-    - [Booking form](#booking-form)
-    - [Footer](#footer)
+    - [StartScreen](#start-screen)
+    - [Quiz questions](#quiz-questions)
+    - [Real time feedback](#real-time-feedback)
+    - [Score tracking](#score-tracking)
+    - [Replay Button](#replay-again)
+    - [Thematic styling](#thematic-styling)
+    - [End Screen](#end-screen)
   - [Future Enhancements](#future-enhancements)
 - [Technologies Used](#tech-used)
   - [Languages](#languages)
@@ -108,13 +109,21 @@ The font family chosen for the Video Game Trivia website is [Press Start 2P](htt
 The chosen colour scheme is inspired by the classic NES Pac-Man aesthetic, utilising a deep dark background paired with bright yellow text. This contrast not only enhances readability but also evokes a sense of nostalgia that many users instantly recognise. The neon cyan accents further support the retro arcade theme, creating a vibrant and engaging visual style throughout the quiz. Overall, the palette reinforces the gaming atmosphere while maintaining strong clarity and accessibility.
 
 
-![Coolors scheme](src\docs\quiz-colour-scheme.png)
+![Coolors scheme](src\docs\quiz-colours.png)
 
 I used [Contrast Grid](https://contrast-grid.eightshapes.com/ "Contrast Grid") to check effective color pairings that support readability and to identify combinations that may hinder legibility due to insufficient contrast or visual discomfort.
 
-![Colour contrast grid](docs/colour-contrast-grid.png)
+![Colour contrast grid](src\docs\quiz-colour-scheme.png)
 
-// THIS NEEDS REDOING//
+| CSS Name        | HEX       | Comment                 |
+|-----------------|-----------|-------------------------|
+| --neon-yellow | #ffff33   | Primary colour          |
+| --neon-blue  | #00ffff   | Second colour           |
+| --teal       | #00ffff55 | button shadow           |
+| --black       | #000010   | Background              |
+| --navy       | #000020   | background of buttons   |
+| --green       | #22c55e   | Correct answer colour   |
+| --red         | #ef4444   | Incorrect answer colour |
 
 
 ### Responsiveness
@@ -222,6 +231,97 @@ This feature encourages replayability and adds a competitive edge, perfect for s
 
 ### Responsiveness Tests
 
+To ensure a smooth experience across devices, I tested the quiz app early and often using a mobile-first approach. I relied on Chrome DevTools to simulate various screen sizes during development, checking layout, navigation, and interactive behavior. After deployment, I used Am I Responsive to preview the live site across multiple breakpoints and identify any layout inconsistencies.
+
+# User Story BDD Testing
+
+---
+
+### User Story 1 — Challenge my knowledge of video games
+
+| Category | Details |
+|---------|---------|
+| **User Story** | As a user, I want my knowledge of video games to be challenged so I can test my skills and learn new facts. |
+| **Scenario** | Starting the quiz |
+| **Given** | The user is on the landing page |
+| **When** | They click the “Start Quiz” button |
+| **Then** | The first question is displayed |
+| **Result** |  Pass |
+| **Evidence** | [Screenshot of the first question](src\docs\user-story-testing-one.png) |
+
+---
+
+### User Story 2 — Receive immediate feedback on quiz answers
+
+| Category | Details |
+|---------|---------|
+| **User Story** | As a user, I want to receive immediate feedback on my quiz answers so I can see if I answered correctly and improve if I’m incorrect. |
+| **Scenario** | Answer feedback |
+| **Given** | A question is displayed |
+| **When** | The user selects an answer |
+| **Then** | Correct answers highlight green; incorrect answers highlight red, and the correct answer is shown |
+| **Result** |  Pass |
+| **Evidence** | [Screenshot of incorrect feedback](src\docs\user-story-testing-two.png) [Screenshot of correct feedback](src\docs\user-story-testing-two-c.png) |
+
+---
+
+### User Story 3 — Navigation is intuitive and straightforward
+
+| Category | Details |
+|---------|---------|
+| **User Story** | As a user, I want navigation to be intuitive and straightforward so I can move through the quiz without confusion. |
+| **Scenario** | Moving between questions |
+| **Given** | Feedback for the current question is displayed |
+| **When** | The user clicks “Next Question” |
+| **Then** | The next question loads smoothly and logically |
+| **Result** |  Pass |
+| **Evidence** | [Screenshot of next question button](src\docs\user-story-testing-next-q.png) / [navigation flow](src\docs\user-story-testing-three.png) |
+
+---
+
+### User Story 4 — Visually appealing interface
+
+| Category | Details |
+|---------|---------|
+| **User Story** | As a user, I want a visually appealing interface that enhances the overall experience so the quiz experience is engaging and enjoyable. |
+| **Scenario** | Viewing the quiz interface |
+| **Given** | The quiz page loads |
+| **When** | The user views the page |
+| **Then** | The retro colour scheme, readable text, and clean layout are visible |
+| **Result** |  Pass |
+| **Evidence** | [Screenshot of quiz interface](src\docs\user-story-testing-four.png) |
+
+---
+
+### User Story 5 — Scoring system is transparent
+
+| Category | Details |
+|---------|---------|
+| **User Story** | As a user, I want the scoring system to be transparent and understandable so I understand my performance throughout the quiz. |
+| **Scenario** | Score tracking |
+| **Given** | The user is answering questions |
+| **When** | The score changes |
+| **Then** | The score updates visibly on screen |
+| **Scenario** | End of quiz |
+| **Given** | The user completes the quiz |
+| **When** | The results page loads |
+| **Then** | Final score and a performance message are displayed clearly |
+| **Result** |  Pass |
+| **Evidence** | [Screenshot of score display and end screen](src\docs\user-story-testing-five.png) |
+
+---
+
+### User Story 6 — Accessible on any device
+
+| Category | Details |
+|---------|---------|
+| **User Story** | As a user, I want to access the quiz on any device, including mobile phones and tablets, so I can play anywhere, anytime. |
+| **Scenario** | Responsive layout |
+| **Given** | The quiz is opened on different devices |
+| **When** | The screen size changes |
+| **Then** | All quiz elements remain readable, functional, and well-aligned |
+| **Result** |  Pass |
+| **Evidence** | [Screenshots on mobile, tablet, and desktop](src\docs\all-screen-sizes-image.png) |
 
 
 
@@ -237,22 +337,18 @@ I have used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
 
 ### HTML
 
-
+### Javascript
 
 
 ## Accessibility Testing
 
-I used the web accessibilty evalution tool (WAVE) [WAVE](https://wave.webaim.org/) to test if my quiz app is accessible to people with diverse needs. One alert was raised. I also used the colour contrast checker on WAVE's site for additional checking.
+I used the web accessibilty evalution tool [WAVE](https://wave.webaim.org/) to test if my quiz app is accessible to people with diverse needs. One alert was raised. I also used the colour contrast checker on WAVE's site for additional checking.
 
 ![WAVE](src\docs\wave-accessibility-checker.png)
 ![WAVE](src\docs\wave-contrast-checker-yellow.png "Yellow font")
 ![WAVE](src\docs\wave-contrast-checker-blue.png "Blue font")
 
 
-
-## User Story Testing
-| **User Story**                                                                                                                                     | **Result**                                                                                                   | **Pass** | **Screenshots**                                      |
-|
 ## Feature Testing
 
 This website was extensively tested for functionality using Chrome developer tools.
@@ -288,7 +384,7 @@ The  Video Game Trivia  deployed early in the process to GitHub pages via the fo
 
 - Click on the Save button.
 
-The website is now live at https://Court-pencil.com.
+The website is now live at https://court-pencil.github.io/Game-Trivia/.
 
 Any changes required to the website, they can be made, committed and pushed to GitHub.
 
@@ -322,15 +418,13 @@ Forking the GitHub repository allows you to create a duplicate of a local reposi
 - Visual content:
   - [Coolors](https://coolors.co/)
   - [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23F2F2F2%0D%0A%23DDDDDD%0D%0A%23CCCCCC%0D%0A%23888888%0D%0A%23404040%2C%20Charcoal%0D%0A%23000000%2C%20Black%0D%0A%232F78C5%2C%20Effective%20on%20Extremes%0D%0A%230F60B6%2C%20Effective%20on%20Lights%0D%0A%23398EEA%2C%20Ineffective%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp)
-
-
- 
-  
+ - [DevLab Tutorials](https://www.youtube.com/watch?v=cxyWHKdPPPk)
+ - [Chris Blakely](https://www.youtube.com/watch?v=Lya-qYiDqIA&t=38s)
+ - [CodeVertiser](https://www.codevertiser.com/quiz-app-using-reactjs/)
+ - [NES-style CSS Framework](https://github.com/nostalgic-css/NES.css)
+ - [Building a Simple Quiz App Using a Rest API, React, and Redux](https://medium.com/geekculture/building-a-simple-quiz-app-using-a-rest-api-react-and-redux-5c8a85a9447f)
+ - [10 Retro Video Games Recreated with HTML, JS & CSS](https://speckyboy.com/retro-video-games-html5-js-css/)
+  - [Code Institute](https://learn.codeinstitute.net/ci_program/diwad_v2_14) 
     
-
-- learning content:
-
-  - [Code Institute](https://learn.codeinstitute.net/ci_program/diwad_v2_14)
-  - [Kevin Powell CSS](https://www.youtube.com/@KevinPowell)
   
  
