@@ -172,6 +172,13 @@ My website is repsonsive to all screen sizes.
 
 ## Code Validation
 
+### CSS
+
+I have used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). It returned errors relating to an old way of anti-alisasing of font. I was using this to make sure the pixelated font always appeared crisp on all browers otherwise it would take away from the style of the quiz. I updated it by deleting it and replacing it with -webkit-font-smoothing: antialiased;
+ to keep the crisp edges of my pixelated font. The other errors were relating to extensions for different browers, the use of the same colour for border and background on the .answer-btn.correct and .answer-btn.incorrect. I removed the border as i liked how it looked as it was and the border was deemed unnecessary. I ran the test again  after the improvements and it passed.
+![Screenshot of CSS validation test](src\docs\css-error-validation.png)
+![Screenshot of CSS validation test](src\docs\css-passed-validation.png)
+
 ### HTML
 
 

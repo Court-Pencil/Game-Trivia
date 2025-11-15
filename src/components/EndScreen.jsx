@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function EndScreen({onRestart, results}) {
-   const { score, total } = results || {};
+export default function EndScreen({ onRestart, results }) {
+  const { score, total } = results || {};
   const percentage = total ? ((score / total) * 100).toFixed(2) : 0;
 
   let message = "";
@@ -16,15 +16,16 @@ export default function EndScreen({onRestart, results}) {
     message = "Keep practicing!";
   }
   return (
-    <div className="end-screen"> 
+    <div className="end-screen">
       <h1 className="end-title">Quiz Completed!</h1>
       <h2 className="end-message">{message}</h2>
       <p className="score-text">
         Your Score: {score} out of {total}
       </p>
       <p className="percentage">Percentage: {percentage}%</p>
-      <button className="restart-btn" onClick={onRestart}>Play again</button>
+      <button className="restart-btn" onClick={onRestart}>
+        Play again
+      </button>
     </div>
-
-  )
+  );
 }
