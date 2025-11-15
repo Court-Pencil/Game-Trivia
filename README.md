@@ -50,22 +50,38 @@ The Video Game Trivia is an app where you can test your video game knowledge wit
 
 ## User Goals
 
-//NEED DOING//
+- Provide user-friendly navigation for a seamless quiz experience.
+- Receive immediate feedback on answers to learn from mistakes.
+- Track progress and score through the quiz.
+- Enjoy a visually engaging and responsive interface.
+- Restart the quiz easily to replay or improve results.
+- Access the app on any device, including mobile phones and tablets.
+- Include relevant and engaging questions in the quiz.
 
 ## User Stories
 
-//NEED DOING//
-
+- As a user, I want my knowledge of video games to be challenged.
+- As a user, I want to receive immediate feedback on my quiz answers.
+- As a user, I want navigation to be intuitive and straightforward.
+- As a user, I want a visually appealing interface that enhances the overall experience.
+- As a user, I want the scoring system to be transparent and understandable.
+- As a user, I want to access the quiz on any device, including mobile phones and tablets.
 
 ## Website Goals and Objectives
 
-//NEED DOING//
+- Provide an entertaining and engaging quiz experience for users.
+- Include a variety of video game topics to appeal to a wide audience.
+- Offer immediate feedback to enhance learning and enjoyment.
+- Increase user interaction by allowing quizzes to be replayed and scores tracked.
+- Maintain high performance and responsiveness across all devices.
+- Encourage repeat visits by providing motivational messages and smooth quiz flow.
 
 
 ## Target Audience
 
-- Video game enthusiasts
-- Quiz ethusiasts
+- Video game enthusiasts – people who play or follow video games and enjoy testing their knowledge.
+- Quiz enthusiasts – people who enjoy trivia games and challenges.
+- Pop culture fans – people interested in gaming, anime, or nerd culture who enjoy quizzes about media.
 
 
 ## Wireframes
@@ -106,7 +122,7 @@ I used [Contrast Grid](https://contrast-grid.eightshapes.com/ "Contrast Grid") t
 
 ### Responsiveness
 
-My website is repsonsive to all screen sizes. 
+My App is repsonsive to all screen sizes. 
 | Breakpoint | Class infix | Dimensions | | |
 |-------------------|-------------|------------|---|---|
 | Extra small | None | <576px | | |
@@ -119,24 +135,56 @@ My website is repsonsive to all screen sizes.
 
 ## Features
 
-// FEATURES NEED ADDING//
 
-- Mobile-First Responsive Design – Built with a mobile-first approach to ensure the site looks and works seamlessly on phones, tablets, and desktops.
+The interactive quiz interface is a clean and responsive UI that invites the user to test their video game knowledge. The layout is intutive, with a clear call-to-action to start the quiz.
+Mobile-First Responsive Design – Built with a mobile-first approach to ensure the site looks and works seamlessly on phones, tablets, and desktops.
+
 
 ## Existing Features
 
 ### Start Screen
 
+The start screen features a 'Start Quiz' button that launches the trivia experience, making it easy for users to get started.
+
 
 
 ### Quiz questions
 
+The questions have multiple choice answers. Each question has four answer options, giving the user a familiar and accessible format.
 
+### Real time feedback
 
+When a answer is selected, the user recieves immediate visual feeback indicating whether their choice was correct or incorrect. This helps reinforce engagment and learning.
+
+### Score tracking
+
+The score is kept track throughout the quiz, once at the end of the quiz the user sees their score out of ten and a percentage.
+
+### Replay Button
+
+At the end of the quiz when the user has completed, they are given the option to play again. Which brings them back to the start screen to play again.
+
+### Thematic styling
+
+The use of the retro style on the app from the retro-inspired colour pallette and typography relfects the classic video game  aesthetic, echancing thematic experience.
 
 ### End Screen
 
+The end screen has a smooth transition displaying the users score. A final score is displayed alongside a completion message depending on the score the user got, it returns a different message and a play again button to restart the quiz.
+
 ## Future Enchancements
+
+### Difficulty section
+Users would be able to choose their preferred challange level before starting the quiz.
+It would include easy, medium and hard mode. Easy mode for casual play, straightforward questions and no time limit. Medium would be for a balanced experience, moderately challanging questions with no time limit. Hard mode would be for seasoned gamers, this would feature challanging and niche questions and a time constraint. This feature enhances accessibility and replayability, allowing users to tailor the experience to their skill level or mood.
+
+### Time challange(Hard mode)
+For Hard mode, a countdown timer will be there for each question. The user would have to answer before the time runs out e.g. 10 seconds, adding urgency and excitment. If the timer runs out the question is marked incorrect and moves to the next question. This mechanic increases the pressure and rewards fast recall, making the quiz more engaging for competitive or experienced users.
+
+###  Scoreboard System
+A scoreboard will track and display high scores across sessions. Users can see their best scores and compare them with others (or their own previous attempts). - The scoreboard may include player initials, score, difficulty level, and date achieved.
+This feature encourages replayability and adds a competitive edge, perfect for sharing with friends or challenging yourself to improve.
+
 
 ## Technologies Used
 
@@ -160,13 +208,17 @@ My website is repsonsive to all screen sizes.
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - [Color Contrast Accessibility Validator](https://jigsaw.w3.org/css-validator/)
   https://www.audioeye.com/color-contrast-checker/
-
+- [Open Trivia DB](https://opentdb.com/ "Open Trivia DB")
+- [WAVE Accessibility Tool](https://wave.webaim.org/ "WAVE Accessibility Tool")
+- [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive")
 
 ## Testing
 
 ### Bugs
 
 ### Responsiveness Tests
+
+
 
 
 
@@ -266,7 +318,7 @@ Forking the GitHub repository allows you to create a duplicate of a local reposi
 - Visual content:
   - [Coolors](https://coolors.co/)
   - [Contrast Grid](https://contrast-grid.eightshapes.com/?version=1.1.0&background-colors=&foreground-colors=%23FFFFFF%2C%20White%0D%0A%23F2F2F2%0D%0A%23DDDDDD%0D%0A%23CCCCCC%0D%0A%23888888%0D%0A%23404040%2C%20Charcoal%0D%0A%23000000%2C%20Black%0D%0A%232F78C5%2C%20Effective%20on%20Extremes%0D%0A%230F60B6%2C%20Effective%20on%20Lights%0D%0A%23398EEA%2C%20Ineffective%0D%0A&es-color-form__tile-size=compact&es-color-form__show-contrast=aaa&es-color-form__show-contrast=aa&es-color-form__show-contrast=aa18&es-color-form__show-contrast=dnp)
-- Images:
+
 
  
   
