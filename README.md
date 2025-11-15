@@ -65,7 +65,7 @@ The Video Game Trivia is an app where you can test your video game knowledge wit
 ## Target Audience
 
 - Video game enthusiasts
-- People who like quizeses and testing their knowledge
+- Quiz ethusiasts
 
 
 ## Wireframes
@@ -95,9 +95,9 @@ The font family chosen for the Video Game Trivia website is Press Start 2P for t
 The colour scheme was chosen based on colours nes Pacman game. The navy blue background and yellow text mirrors the old style PacMan game which i think is something that a lot of people know of.
 
 
-![Coolors scheme](/not done yet/)
+![Coolors scheme](src\docs\quiz-colour-scheme.png)
 
-I used [Contrast Grid]("Contrast Grid") to check effective color pairings that support readability and to identify combinations that may hinder legibility due to insufficient contrast or visual discomfort.
+I used [Contrast Grid](https://contrast-grid.eightshapes.com/ "Contrast Grid") to check effective color pairings that support readability and to identify combinations that may hinder legibility due to insufficient contrast or visual discomfort.
 
 ![Colour contrast grid](docs/colour-contrast-grid.png)
 
