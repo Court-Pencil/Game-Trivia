@@ -184,7 +184,14 @@ I have used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
 
 
 
-### CSS
+## Accessibility Testing
+
+I used the web accessibilty evalution tool (WAVE) [WAVE](https://wave.webaim.org/) to test if my quiz app is accessible to people with diverse needs. One alert was raised. I also used the colour contrast checker on WAVE's site for additional checking.
+
+![WAVE](src\docs\wave-accessibility-checker.png)
+![WAVE](src\docs\wave-contrast-checker-yellow.png "Yellow font")
+![WAVE](src\docs\wave-contrast-checker-blue.png "Blue font")
+
 
 
 ## User Story Testing
@@ -196,7 +203,20 @@ This website was extensively tested for functionality using Chrome developer too
 
 ## Lighthouse Testing
 
+The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthouse Testing tool which inspects and scores the website for the following criteria. I generated two sets of lighthouse reports, one for mobile and one for desktop. 
 
+- Performance - how quickly a website loads and how quickly users can access it.
+- Accessibility - test analyses how well people who use assistive technologies can use your website.
+- Best Practices - checks whether the page is built on the modern standards of web development.  
+- SEO - checks if the website is optimised for search engine result rankings.
+
+## Mobile chrome Dev tools testing:
+![lighthouse testing image index](src\docs\mobile-lighthouse-testing.png)
+ 
+
+## Desktop chrome Dev tools testing:
+![lighthouse testing image index](src\docs\desktop-lighthouse-testing.png)
+ 
 
 ## Deployment
 
