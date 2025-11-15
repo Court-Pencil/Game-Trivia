@@ -60,12 +60,12 @@ The Video Game Trivia is an app where you can test your video game knowledge wit
 
 ## User Stories
 
-- As a user, I want my knowledge of video games to be challenged.
-- As a user, I want to receive immediate feedback on my quiz answers.
-- As a user, I want navigation to be intuitive and straightforward.
-- As a user, I want a visually appealing interface that enhances the overall experience.
-- As a user, I want the scoring system to be transparent and understandable.
-- As a user, I want to access the quiz on any device, including mobile phones and tablets.
+- As a user, I want my knowledge of video games to be challenged so i can test my skills and learn new facts.
+- As a user, I want to receive immediate feedback on my quiz answers so i can see if i answered correcty and improve if im incorrect.
+- As a user, I want navigation to be intuitive and straightforward so i can move through the quiz without confusion.
+- As a user, I want a visually appealing interface that enhances the overall experience so the quiz experience is engaging and enjoyable.
+- As a user, I want the scoring system to be transparent and understandable so i understand my preformance through the quiz.
+- As a user, I want to access the quiz on any device, including mobile phones and tablets so i can play anywhere, anytime.
 
 ## Website Goals and Objectives
 
@@ -103,7 +103,7 @@ The final design of the Trailblazers site evolved from the original wireframes t
 /add more about why i picked the fonts/
 
 
-The font family chosen for the Video Game Trivia website is Press Start 2P for the primary font. Lato for the secondary font. These were chosen for replicating nes font to give that retro vibe, to bring a nostaligic feeling to the user.
+The font family chosen for the Video Game Trivia website is [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) for the primary font. Lato for the secondary font. These were chosen for replicating nes font to give that retro vibe, to bring a nostaligic feeling to the user.
 
 
 ### Colour Scheme
@@ -206,15 +206,22 @@ This feature encourages replayability and adds a competitive edge, perfect for s
 - [Balsamiq](https://balsamiq.com/)
 - [W3C HTML Validation Service](https://validator.w3.org/)
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
-- [Color Contrast Accessibility Validator](https://jigsaw.w3.org/css-validator/)
-  https://www.audioeye.com/color-contrast-checker/
 - [Open Trivia DB](https://opentdb.com/ "Open Trivia DB")
 - [WAVE Accessibility Tool](https://wave.webaim.org/ "WAVE Accessibility Tool")
 - [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive")
 
 ## Testing
 
-### Bugs
+## Bugs
+
+| Bug | Status | Description | Resolution Steps |
+|-----|--------|-------------|------------------|
+| **API not displaying questions and answers** | Fixed | Blank UI with console showing two sets of arrays | Added dependency array to `useEffect` and implemented flag to prevent double fetch |
+| **Blank screen on deployment** | Fixed | App worked locally but showed nothing on GitHub Pages with no console errors | Removed `homepage` field from `package.json` to allow correct routing |
+| **Double rendering in console** | Fixed | Console logged arrays twice due to state update clashes | Wrapped fetch logic in `useRef` guard to handle React Strict Mode double renders |
+| **Answer buttons remained clickable after selection** | Fixed | Users could click multiple answers for the same question, affecting score accuracy | Added disabled state to all answer buttons after first selection and reset on next question |
+| **Score not updating correctly** | Fixed | Final score was incorrect or stuck | Refactored score logic to update only on correct answers with proper condition checks |
+| **Quiz restarted unexpectedly** | Fixed | Quiz reset mid-way or after answering | Lifted state up and memoized quiz component to preserve state across renders |
 
 ### Responsiveness Tests
 
