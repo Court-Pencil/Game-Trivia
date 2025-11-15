@@ -5,7 +5,7 @@
 
 The Video Game Trivia is an app where you can test your video game knowledge with easy, medium and hard questions. There is a start screen which is in the style of a retro games that is inspired from the early nes console graphics to give that novelty feeling. 10 quiz questions that are fetched from a API and the questions are different each time you play the quiz. Once the quiz is completed it takes you to a results page and shows the users how much they scored and there is a retry button that once clicked will bring you back to the start screen for the user to play again. 
 
-![image of website on all screen sizes](src\docs\all-screen-sizes-image.png)
+![image of website on all screen sizes](src/docs/all-screen-sizes-image.png)
 
 [Contents]()
 
@@ -93,9 +93,9 @@ Wireframes for the quiz were created using Balsamiq, starting with mobile layout
 
 The UX design of the quiz focuses on clarity, simplicity, and ease of use to ensure a smooth experience for all users. The interface avoids unnecessary visual clutter, presenting only essential elements such as the current question, answer options, and score, which helps maintain focus and reduce cognitive load. The linear structure—Start → Quiz → Results—provides a clear and intuitive flow, allowing users to navigate the quiz without confusion. Consistent styling, readable typography, and clear visual feedback for correct and incorrect answers enhance user engagement and make the experience more interactive. The end screen delivers a concise summary of the user’s performance along with a motivational message and a replay option, supporting continued participation and learning. Overall, the design prioritises accessibility, responsiveness, and user enjoyment across all devices
 
-![Wireframe-Mobile](src\docs\mobile-wireframe.png)
-![Wireframe-Tablet](src\docs\tablet-wireframe.png)
-![Wireframe-Desktop](src\docs\desktop-wireframe.png)
+![Wireframe-Mobile](src/docs/mobile-wireframe.png)
+![Wireframe-Tablet](src/docs/tablet-wireframe.png)
+![Wireframe-Desktop](src/docs/desktop-wireframe.png)
 
 ## Design Choices
 
@@ -109,11 +109,11 @@ The font family chosen for the Video Game Trivia website is [Press Start 2P](htt
 The chosen colour scheme is inspired by the classic NES Pac-Man aesthetic, utilising a deep dark background paired with bright yellow text. This contrast not only enhances readability but also evokes a sense of nostalgia that many users instantly recognise. The neon cyan accents further support the retro arcade theme, creating a vibrant and engaging visual style throughout the quiz. Overall, the palette reinforces the gaming atmosphere while maintaining strong clarity and accessibility.
 
 
-![Coolors scheme](src\docs\quiz-colours.png)
+![Coolors scheme](src/docs/quiz-colours.png)
 
 I used [Contrast Grid](https://contrast-grid.eightshapes.com/ "Contrast Grid") to check effective color pairings that support readability and to identify combinations that may hinder legibility due to insufficient contrast or visual discomfort.
 
-![Colour contrast grid](src\docs\quiz-colour-scheme.png)
+![Colour contrast grid](src/docs/quiz-colour-scheme.png)
 
 | CSS Name        | HEX       | Comment                 |
 |-----------------|-----------|-------------------------|
@@ -247,7 +247,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 | **When** | They click the “Start Quiz” button |
 | **Then** | The first question is displayed |
 | **Result** |  Pass |
-| **Evidence** | [Screenshot of the first question](src\docs\user-story-testing-one.png) |
+| **Evidence** | [Screenshot of the first question](src/docs/user-story-testing-one.png) |
 
 ---
 
@@ -261,7 +261,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 | **When** | The user selects an answer |
 | **Then** | Correct answers highlight green; incorrect answers highlight red, and the correct answer is shown |
 | **Result** |  Pass |
-| **Evidence** | [Screenshot of incorrect feedback](src\docs\user-story-testing-two.png) [Screenshot of correct feedback](src\docs\user-story-testing-two-c.png) |
+| **Evidence** | [Screenshot of incorrect feedback](src/docs/user-story-testing-two.png) [Screenshot of correct feedback](src/docs/user-story-testing-two-c.png) |
 
 ---
 
@@ -275,7 +275,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 | **When** | The user clicks “Next Question” |
 | **Then** | The next question loads smoothly and logically |
 | **Result** |  Pass |
-| **Evidence** | [Screenshot of next question button](src\docs\user-story-testing-next-q.png) / [navigation flow](src\docs\user-story-testing-three.png) |
+| **Evidence** | [Screenshot of next question button](src/docs/user-story-testing-next-q.png) / [navigation flow](src/docs/user-story-testing-three.png) |
 
 ---
 
@@ -289,7 +289,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 | **When** | The user views the page |
 | **Then** | The retro colour scheme, readable text, and clean layout are visible |
 | **Result** |  Pass |
-| **Evidence** | [Screenshot of quiz interface](src\docs\user-story-testing-four.png) |
+| **Evidence** | [Screenshot of quiz interface](src/docs/user-story-testing-four.png) |
 
 ---
 
@@ -307,7 +307,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 | **When** | The results page loads |
 | **Then** | Final score and a performance message are displayed clearly |
 | **Result** |  Pass |
-| **Evidence** | [Screenshot of score display and end screen](src\docs\user-story-testing-five.png) |
+| **Evidence** | [Screenshot of score display and end screen](src/docs/user-story-testing-five.png) |
 
 ---
 
@@ -321,7 +321,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 | **When** | The screen size changes |
 | **Then** | All quiz elements remain readable, functional, and well-aligned |
 | **Result** |  Pass |
-| **Evidence** | [Screenshots on mobile, tablet, and desktop](src\docs\all-screen-sizes-image.png) |
+| **Evidence** | [Screenshots on mobile, tablet, and desktop](src/docs/all-screen-sizes-image.png) |
 
 
 
@@ -332,23 +332,23 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 
 I have used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). It returned errors relating to an old way of anti-alisasing of font. I was using this to make sure the pixelated font always appeared crisp on all browers otherwise it would take away from the style of the quiz. I updated it by deleting it and replacing it with -webkit-font-smoothing: antialiased;
  to keep the crisp edges of my pixelated font. The other errors were relating to extensions for different browers, the use of the same colour for border and background on the .answer-btn.correct and .answer-btn.incorrect. I removed the border as i liked how it looked as it was and the border was deemed unnecessary. I ran the test again  after the improvements and it passed.
-![Screenshot of CSS validation test](src\docs\css-error-validation.png)
-![Screenshot of CSS validation test](src\docs\css-passed-validation.png)
+![Screenshot of CSS validation test](src/docs/css-error-validation.png)
+![Screenshot of CSS validation test](src/docs/css-passed-validation.png)
 
 ### HTML
 
 ### Javascript 
 
 Reactjs code validated by [ESlint](https://eslint.org/). 1 error indentfied.
-![React.js Validation image](src\docs\eslint-validation.png)
+![React.js Validation image](src/docs/eslint-validation.png)
 
 ## Accessibility Testing
 
 I used the web accessibilty evalution tool [WAVE](https://wave.webaim.org/) to test if my quiz app is accessible to people with diverse needs. One alert was raised. I also used the colour contrast checker on WAVE's site for additional checking.
 
-![WAVE](src\docs\wave-accessibility-checker.png)
-![WAVE](src\docs\wave-contrast-checker-yellow.png "Yellow font")
-![WAVE](src\docs\wave-contrast-checker-blue.png "Blue font")
+![WAVE](src/docs/wave-accessibility-checker.png)
+![WAVE](src/docs/wave-contrast-checker-yellow.png "Yellow font")
+![WAVE](src/docs/wave-contrast-checker-blue.png "Blue font")
 
 
 ## Feature Testing
@@ -365,11 +365,11 @@ The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthou
 - SEO - checks if the website is optimised for search engine result rankings.
 
 ## Mobile chrome Dev tools testing:
-![lighthouse testing image index](src\docs\mobile-lighthouse-testing.png)
+![lighthouse testing image index](src/docs/mobile-lighthouse-testing.png)
  
 
 ## Desktop chrome Dev tools testing:
-![lighthouse testing image index](src\docs\desktop-lighthouse-testing.png)
+![lighthouse testing image index](src/docs/desktop-lighthouse-testing.png)
  
 
 ## Deployment
