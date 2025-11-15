@@ -15,8 +15,7 @@ button,
 .answer-btn,
 .next-btn {
   font-family: "Press Start 2P", cursive;
-  font-smooth: never;
-  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeSpeed;
 }
@@ -163,14 +162,12 @@ body {
 .answer-btn.correct {
   background-color: #22c55e;
   color: #000010;
-  border-color: #22c55e;
   box-shadow: 0 0 1rem #22c55e;
 }
 
 .answer-btn.incorrect {
   background-color: #ef4444;
   color: #000010;
-  border-color: #ef4444;
   box-shadow: 0 0 1rem #ef4444;
 }
 

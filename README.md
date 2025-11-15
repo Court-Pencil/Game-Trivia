@@ -149,8 +149,8 @@ My website is repsonsive to all screen sizes.
 ### Libraries & Framework
 
 - [Google Fonts](https://fonts.google.com/selection)
-- [Fav Icon](https://fontawesome.com/)
-- [Bootstrap](https://getbootstrap.com/)
+
+
 
 ### Tools
 
