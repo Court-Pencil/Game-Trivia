@@ -249,7 +249,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 A manual walkthrough of the quiz app was performed on an Android mobile device to confirm responsiveness, usability, and visual clarity.  
 The GIF below demonstrates the application being used on an actual device:
 
-![Watch Android Manual Testing Video](src/docs/game-trivia-testing.mp4)
+![Watch Android Manual Testing Video](src/docs/video-game-trivia-testing.gif)
 
 This recording showcases:
 - The landing page functionality  
