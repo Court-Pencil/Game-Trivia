@@ -233,6 +233,36 @@ This feature encourages replayability and adds a competitive edge, perfect for s
 
 To ensure a smooth experience across devices, I tested the quiz app early and often using a mobile-first approach. I relied on Chrome DevTools to simulate various screen sizes during development, checking layout, navigation, and interactive behavior. After deployment, I used Am I Responsive to preview the live site across multiple breakpoints and identify any layout inconsistencies.
 
+| Device / Screen Size | Expected Behaviour                      | Actual Result                                     | Pass/Fail | Notes             |
+|----------------------|-----------------------------------------|---------------------------------------------------|-----------|-------------------|
+| iPhone SE            | Layout fits screen, buttons easy to tap | Works as expected                                 | Pass      |                   |
+| iPhone 12            | No overflow, text readable              | Works as expected                                 | Pass      |                   |
+| Pixel 7              | Buttons scale correctly, no clipping    | Works as expected                                 | Pass      |                   |
+| iPad mini            | Layout expands but stays centred        | Works as expected                                 | Pass      |                   |
+| iPad Pro             | Content does not stretch too wide       | opposite problem little too small on the screen   | Fail      | Working on fixing |
+| Nest Hub             | Fully readable, centred content         | Works as expected                                 | Pass      |                   |
+| Next Hub Max         | Max-width applied, UI stable            | Works as expected, little too small on the screen | Fail      | Working on fixing |
+
+
+## Manual Testing (Android Device)
+
+A manual walkthrough of the quiz app was performed on an Android mobile device to confirm responsiveness, usability, and visual clarity.  
+The GIF below demonstrates the application being used on an actual device:
+
+![Watch Android Manual Testing Video](src/docs/game-trivia-testing.mp4)
+
+This recording showcases:
+- The landing page functionality  
+- Navigation through quiz questions  
+- The score update process  
+- Answer selection and feedback  
+- The final results screen  
+- Overall responsiveness and smooth user interaction
+
+This visual evidence supports the results documented in the Responsive Testing Table.
+
+
+
 ### User Story BDD Testing
 
 ---
