@@ -40,7 +40,7 @@ export default function Questions({ onGameEnd }) {
           setCurrentQuestionIndex(0);
         }
         setLoading(false);
-      } catch (e) {
+      } catch {
         setError("Failed to fetch questions. Please try again later.");
       }
     };

@@ -246,7 +246,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 
 ## Manual Testing (Android Device)
 
-A manual walkthrough of the quiz app was performed on an Android mobile device to confirm responsiveness, usability, and visual clarity.  
+A manual walkthrough of the quiz app was performed on an Google Pixel 7 mobile device to confirm responsiveness, usability, and visual clarity.  
 The GIF below demonstrates the application being used on an actual device:
 
 ![Watch Android Manual Testing Video](src/docs/video-game-trivia-testing.gif)
@@ -367,10 +367,15 @@ I have used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
 
 ### HTML
 
+I have used [W3C HTML Validation Service](https://validator.w3.org/). The tests came back with no errors. There was 3 info messages about trailing slash on void elements but that doesnt indicate any problems just showing best practices. Having used vite for my React js app i have no changed the trailing slashes on the index HTML as it was set up that way and doesnt pose any problems to the functioning of the app.
+
+![HTML Validation image](src/docs/html-testing-one.png)
+![HTML Validation image](src/docs/html-testing-two.png)
+
 ### Javascript 
 
-Reactjs code validated by [ESlint](https://eslint.org/). 1 error indentfied.
-![React.js Validation image](src/docs/eslint-validation.png)
+Reactjs code validated by [ESlint](https://eslint.org/) through VSCode plug-in. 1 error indentfied. 
+![React.js Validation image](src/docs/eslint-validation.png). I fixed what was causing the error. 
 
 ## Accessibility Testing
 
