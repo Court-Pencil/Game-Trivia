@@ -374,8 +374,15 @@ I have used [W3C HTML Validation Service](https://validator.w3.org/). The tests 
 
 ### Javascript 
 
-Reactjs code validated by [ESlint](https://eslint.org/) through VSCode plug-in. 1 error indentfied. 
-![React.js Validation image](src/docs/eslint-validation.png). I fixed what was causing the error. 
+Reactjs code validated by [ESlint](https://eslint.org/) through VSCode plug-in. ESLint was used to ensure code quality and identify potential issues during development. 1 error was indentfied. 
+![React.js Validation image](src/docs/eslint-validation.png). After correction by removing the unused error parameter, ESLint was run again and returned no errors, demonstrating that the code now adheres to the configured linting rules. 
+
+![React.js Validation image](src/docs/eslint-passing.png)
+ESLint ran successfully and returned no errors or warnings, indicating the code meets all linting rules.
+
+
+
+
 
 ## Accessibility Testing
 
