@@ -38,6 +38,7 @@ The Video Game Trivia is an app where you can test your video game knowledge wit
   - [Code Validation](#code-validation)
     - [HTML](#html)
     - [CSS](#css)
+    - [Javascript](#javascript)
   - [User Story Testing](#user-story-testing)
   - [Feature Testing](#feature-testing)
   - [Acessibility Testing](#acessibility-testing)
@@ -239,9 +240,9 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 | iPhone 12            | No overflow, text readable              | Works as expected                                 | Pass      |                   |
 | Pixel 7              | Buttons scale correctly, no clipping    | Works as expected                                 | Pass      |                   |
 | iPad mini            | Layout expands but stays centred        | Works as expected                                 | Pass      |                   |
-| iPad Pro             | Content does not stretch too wide       | opposite problem little too small on the screen   | Fail      | Working on fixing |
+| iPad Pro             | Content does not stretch too wide       | opposite problem little too small on the screen   | Fail      | Working in progress |
 | Nest Hub             | Fully readable, centred content         | Works as expected                                 | Pass      |                   |
-| Next Hub Max         | Max-width applied, UI stable            | Works as expected, little too small on the screen | Fail      | Working on fixing |
+| Next Hub Max         | Max-width applied, UI stable            | Works as expected, little too small on the screen | Fail      | Work in progress |
 
 
 ## Manual Testing (Android Device)
