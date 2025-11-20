@@ -428,19 +428,59 @@ The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthou
 
 ### To deploy the project
 
-The  Video Game Trivia  deployed early in the process to GitHub pages via the following steps:
+The  Video Game Trivia  deployed early in the process using vite and GitHub pages via the following steps:
 
-- Navigate to the repository on GitHub and click on Settings.
+1. Install GitHub Pages Deployment Tool:
+ - In your project, install gh-pages with the following command.  
+  npm install gh-pages --save-dev
 
-- In the side navigation and select Pages.
+2. Update vite.config.js:
+  - Add the base property so GitHub Pages knows where your site lives.    
+  Example:  
+  export default defineConfig({
+  base: "/your-repo-name/",
+  plugins: [react()],
+});
 
-- In the None dropdown and choose Main.
+3. Update package.json Scripts:
+  - add two scripts for buidling and deploying:  
+    Example:   
+    "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+}
 
-- Click on the Save button.
+4. Build and Deploy:
+   With the following commands to the terminal:  
+   npm run build  
+   npm run deploy
+
+5. Enable GitHub Pages:
+   On GitHub:
+
+   - Go to Settings → Pages
+
+  - Under Source, select Deploy from branch
+
+   - Under Branch, choose:
+
+      * gh-pages
+
+      * / (root)
+
+   - Click Save
 
 The website is now live at https://court-pencil.github.io/Game-Trivia/.
 
 Any changes required to the website, they can be made, committed and pushed to GitHub.
+
+### Redeploying After Changes
+
+Anytime you update your project run command: 
+npm run build
+npm run deploy
 
 ### To Fork the Project
 
