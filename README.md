@@ -7,13 +7,16 @@
 
 [Video Game Trivia](https://court-pencil.github.io/Game-Trivia/)
 
-The app is styled like classic retro games, inspired by early NES console graphics to give a sense of nostalgia. It features a start screen with a 'Start' button, which launches a quiz of 10 questions fetched from an API, ensuring a new set of questions each time you play. Upon completing the quiz, users are taken to a results page displaying their score, along with a 'play again' button that resets the quiz and loads a fresh set of questions for another round.
+Video Game Trivia app is styled like classic retro games, inspired by early NES console graphics to give a sense of nostalgia. It features a start screen with a 'Start' button, which launches a quiz of 10 questions fetched from an API, ensuring a new set of questions each time you play. Upon completing the quiz, users are taken to a results page displaying their score, along with a 'play again' button that resets the quiz and loads a fresh set of questions for another round.
 
 
 ![image of website on all screen sizes](src/docs/all-screen-sizes-image.png)
 
 ## Project Rationale
 The Video Game Trivia app was created to offer users a simple and enjoyable way to test their gaming knowledge through a fun, fast-paced quiz experience. Many trivia apps focus on general topics, so this project aims to provide a dedicated space specifically for video game fans. The retro-inspired design helps capture the nostalgia of early gaming, making the experience more engaging for users. By fetching new questions each time, the app encourages replayability while giving users the chance to learn new facts and improve their score with every attempt.
+
+This project was originally built with Create React App, but I switched to Vite because it’s faster and more up-to-date. Vite starts the development server almost instantly and updates changes in real time, making development smoother. It also produces smaller, faster files when building for deployment.
+
 
 [Contents]()
 
