@@ -1,11 +1,19 @@
 # Video Game Trivia
 
 
+
+
+## Project Overview
+
 [Video Game Trivia](https://court-pencil.github.io/Game-Trivia/)
 
-The Video Game Trivia is an app where you can test your video game knowledge with easy, medium and hard questions. There is a start screen which is in the style of a retro games that is inspired from the early nes console graphics to give that novelty feeling. 10 quiz questions that are fetched from a API and the questions are different each time you play the quiz. Once the quiz is completed it takes you to a results page and shows the users how much they scored and there is a retry button that once clicked will bring you back to the start screen for the user to play again. 
+The Video Game Trivia is an app where you can test your video game knowledge. There is a start screen which is in the style of a retro games that is inspired from the early NES console graphics to give that novelty feeling. 10 quiz questions that are fetched from a API and the questions are different each time you play the quiz. Once the quiz is completed it takes you to a results page and shows the users how much they scored and there is a retry button that once clicked will bring you back to the start screen for the user to play again, with new questions loaded each time. 
+
 
 ![image of website on all screen sizes](src/docs/all-screen-sizes-image.png)
+
+## Project Rationale
+The Video Game Trivia app was created to offer users a simple and enjoyable way to test their gaming knowledge through a fun, fast-paced quiz experience. Many trivia apps focus on general topics, so this project aims to provide a dedicated space specifically for video game fans. The retro-inspired design helps capture the nostalgia of early gaming, making the experience more engaging for users. By fetching new questions each time, the app encourages replayability while giving users the chance to learn new facts and improve their score with every attempt.
 
 [Contents]()
 
@@ -152,7 +160,6 @@ Mobile-First Responsive Design – Built with a mobile-first approach to ensure 
 ### Start Screen
 
 The start screen features a 'Start Quiz' button that launches the trivia experience, making it easy for users to get started.
-
 
 
 ### Quiz questions
@@ -382,9 +389,6 @@ Reactjs code validated by [ESlint](https://eslint.org/) through VSCode plug-in. 
 ESLint ran successfully and returned no errors or warnings, indicating the code meets all linting rules.
 
 
-
-
-
 ## Accessibility Testing
 
 I used the web accessibilty evalution tool [WAVE](https://wave.webaim.org/) to test if my quiz app is accessible to people with diverse needs. One alert was raised. I also used the colour contrast checker on WAVE's site for additional checking.
@@ -414,6 +418,11 @@ The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthou
 ## Desktop chrome Dev tools testing:
 ![lighthouse testing image index](src/docs/desktop-lighthouse-testing.png)
  
+## Known Issues / Limitations
+* Ipad Pro content appears slightly too small on the screen. These layout adjustments are still in progress and will be fixed.
+* Nest Hub Max screen content appears small than desired but responsive improvments are planned.
+* One ARIA alert is implemented, but there are currently no defined page regions. Additional accessibility improvements will be added in future updates.
+
 
 ## Deployment
 
