@@ -9,7 +9,6 @@ export default function App() {
   const [stage, setStage] = useState("start");
   const [results, setResults] = useState(null);
   const handleGameEnd = (results) => {
-    console.log("Game ended with results:", results);
     setResults(results);
     setStage("results");
   };

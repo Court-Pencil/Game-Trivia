@@ -22,7 +22,6 @@ export default function Questions({ onGameEnd }) {
           `https://opentdb.com/api.php?amount=10&category=15&type=multiple`
         );
         const data = await response.json();
-        console.log("fetched data:", data);
         const formattedQuestions = data.results.map((q) => ({
           question: decodeHtmlEntities(q.question),
           correct_answer: decodeHtmlEntities(q.correct_answer),
@@ -45,7 +44,6 @@ export default function Questions({ onGameEnd }) {
       }
     };
     fetchData();
-    console.log("useEffect called");
   }, []);
 
   const handleAnswerClick = (answer) => {
