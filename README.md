@@ -7,7 +7,7 @@
 
 [Video Game Trivia](https://court-pencil.github.io/Game-Trivia/)
 
-The Video Game Trivia is an app where you can test your video game knowledge. There is a start screen which is in the style of a retro games that is inspired from the early NES console graphics to give that novelty feeling. 10 quiz questions that are fetched from a API and the questions are different each time you play the quiz. Once the quiz is completed it takes you to a results page and shows the users how much they scored and there is a retry button that once clicked will bring you back to the start screen for the user to play again, with new questions loaded each time. 
+The app is styled like classic retro games, inspired by early NES console graphics to give a sense of nostalgia. It features a start screen with a 'Start' button, which launches a quiz of 10 questions fetched from an API, ensuring a new set of questions each time you play. Upon completing the quiz, users are taken to a results page displaying their score, along with a 'play again' button that resets the quiz and loads a fresh set of questions for another round.
 
 
 ![image of website on all screen sizes](src/docs/all-screen-sizes-image.png)
@@ -70,19 +70,19 @@ The Video Game Trivia app was created to offer users a simple and enjoyable way 
 
 ## User Stories
 
-- As a user, I want my knowledge of video games to be challenged so i can test my skills and learn new facts.
-- As a user, I want to receive immediate feedback on my quiz answers so i can see if i answered correcty and improve if im incorrect.
-- As a user, I want navigation to be intuitive and straightforward so i can move through the quiz without confusion.
+- As a user, I want my knowledge of video games to be challenged so I can test my skills and learn new facts.
+- As a user, I want to receive immediate feedback on my quiz answers so I can see if I answered correctly and improve if I'm incorrect.
+- As a user, I want navigation to be intuitive and straightforward so I can move through the quiz without confusion.
 - As a user, I want a visually appealing interface that enhances the overall experience so the quiz experience is engaging and enjoyable.
-- As a user, I want the scoring system to be transparent and understandable so i understand my preformance through the quiz.
-- As a user, I want to access the quiz on any device, including mobile phones and tablets so i can play anywhere, anytime.
+- As a user, I want the scoring system to be transparent and understandable so I understand my performance through the quiz.
+- As a user, I want to access the quiz on any device, including mobile phones and tablets so I can play anywhere, anytime.
 
 ## Website Goals and Objectives
 
 - Provide an entertaining and engaging quiz experience for users.
 - Include a variety of video game topics to appeal to a wide audience.
 - Offer immediate feedback to enhance learning and enjoyment.
-- Increase user interaction by allowing quizzes to be replayed and scores tracked.
+- Increase user interaction by allowing quizzes to be replayed and scores to be tracked.
 - Maintain high performance and responsiveness across all devices.
 - Encourage repeat visits by providing motivational messages and smooth quiz flow.
 
@@ -100,7 +100,7 @@ Wireframes for the quiz were created using Balsamiq, starting with mobile layout
 
 ### UX Design
 
-The UX design of the quiz focuses on clarity, simplicity, and ease of use to ensure a smooth experience for all users. The interface avoids unnecessary visual clutter, presenting only essential elements such as the current question, answer options, and score, which helps maintain focus and reduce cognitive load. The linear structure—Start → Quiz → Results—provides a clear and intuitive flow, allowing users to navigate the quiz without confusion. Consistent styling, readable typography, and clear visual feedback for correct and incorrect answers enhance user engagement and make the experience more interactive. The end screen delivers a concise summary of the user’s performance along with a motivational message and a replay option, supporting continued participation and learning. Overall, the design prioritises accessibility, responsiveness, and user enjoyment across all devices
+The UX design of the quiz focuses on clarity, simplicity, and ease of use to ensure a smooth experience for all users. The interface avoids unnecessary visual clutter, presenting only essential elements such as the current question, answer options, and score, which helps maintain focus and reduce cognitive load. The linear structure, Start → Quiz → Results—provides a clear and intuitive flow, allowing users to navigate the quiz without confusion. Consistent styling, readable typography, and clear visual feedback for correct and incorrect answers enhance user engagement and make the experience more interactive. The end screen delivers a concise summary of the user’s performance along with a motivational message and a replay option, supporting continued participation and learning. Overall, the design prioritises accessibility, responsiveness, and user enjoyment across all devices.
 
 ![Wireframe-Mobile](src/docs/mobile-wireframe.png)
 ![Wireframe-Tablet](src/docs/tablet-wireframe.png)
@@ -110,12 +110,12 @@ The UX design of the quiz focuses on clarity, simplicity, and ease of use to ens
 
 ### Typography
 
-The font family chosen for the Video Game Trivia website is [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) for the primary font. Lato for the secondary font. These were chosen for replicating nes font to give that retro vibe, to bring a nostaligic feeling to the user.
+The font family chosen for the Video Game Trivia website is [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) for the primary font. Lato for the secondary font. These were chosen to replicate NES font to give that retro vibe, to bring a nostalgic feeling to the user.
 
 
 ### Colour Scheme
 
-The chosen colour scheme is inspired by the classic NES Pac-Man aesthetic, utilising a deep dark background paired with bright yellow text. This contrast not only enhances readability but also evokes a sense of nostalgia that many users instantly recognise. The neon cyan accents further support the retro arcade theme, creating a vibrant and engaging visual style throughout the quiz. Overall, the palette reinforces the gaming atmosphere while maintaining strong clarity and accessibility.
+The chosen colour scheme is inspired by the classic NES Pac-Man aesthetic, utilising a deep, dark background paired with bright yellow text. This contrast not only enhances readability but also evokes a sense of nostalgia that many users instantly recognise. The neon cyan accents further support the retro arcade theme, creating a vibrant and engaging visual style throughout the quiz. Overall, the palette reinforces the gaming atmosphere while maintaining strong clarity and accessibility.
 
 
 ![Coolors scheme](src/docs/quiz-colours.png)
@@ -137,7 +137,7 @@ I used [Contrast Grid](https://contrast-grid.eightshapes.com/ "Contrast Grid") t
 
 ### Responsiveness
 
-My App is repsonsive to all screen sizes. 
+My App is responsive to all screen sizes. 
 | Breakpoint | Class infix | Dimensions | | |
 |-------------------|-------------|------------|---|---|
 | Extra small | None | <576px | | |
@@ -151,7 +151,7 @@ My App is repsonsive to all screen sizes.
 ## Features
 
 
-The interactive quiz interface is a clean and responsive UI that invites the user to test their video game knowledge. The layout is intutive, with a clear call-to-action to start the quiz.
+The interactive quiz interface is a clean and responsive UI that invites the user to test their video game knowledge. The layout is intuitive, with a clear call-to-action to start the quiz.
 Mobile-First Responsive Design – Built with a mobile-first approach to ensure the site looks and works seamlessly on phones, tablets, and desktops.
 
 
@@ -164,36 +164,36 @@ The start screen features a 'Start Quiz' button that launches the trivia experie
 
 ### Quiz questions
 
-The questions have multiple choice answers. Each question has four answer options, giving the user a familiar and accessible format.
+The questions have multiple-choice answers. Each question has four answer options, giving the user a familiar and accessible format.
 
 ### Real time feedback
 
-When a answer is selected, the user recieves immediate visual feeback indicating whether their choice was correct or incorrect. This helps reinforce engagment and learning.
+When an answer is selected, the user receives immediate visual feedback indicating whether their choice was correct or incorrect. This helps reinforce engagment and learning.
 
 ### Score tracking
 
-The score is kept track throughout the quiz, once at the end of the quiz the user sees their score out of ten and a percentage.
+The score is kept track throughout the quiz, and once at the end of the quiz, the user sees their score out of ten and a percentage.
 
 ### Replay Button
 
-At the end of the quiz when the user has completed, they are given the option to play again. Which brings them back to the start screen to play again.
+At the end of the quiz, when the user has completed, they are given the option to play again. This brings them back to the start screen to play again.
 
 ### Thematic styling
 
-The use of the retro style on the app from the retro-inspired colour pallette and typography relfects the classic video game  aesthetic, echancing thematic experience.
+The use of the retro style on the app from the retro-inspired colour palette and typography reflects the classic video game aesthetic, enhancing thematic experience.
 
 ### End Screen
 
-The end screen has a smooth transition displaying the users score. A final score is displayed alongside a completion message depending on the score the user got, it returns a different message and a play again button to restart the quiz.
+The end screen has a smooth transition displaying the user's score. A final score is displayed alongside a completion message. Depending on the score the user got, it returns a different message and a play again button to restart the quiz.
 
-## Future Enchancements
+## Future Enhancements
 
 ### Difficulty section
-Users would be able to choose their preferred challange level before starting the quiz.
-It would include easy, medium and hard mode. Easy mode for casual play, straightforward questions and no time limit. Medium would be for a balanced experience, moderately challanging questions with no time limit. Hard mode would be for seasoned gamers, this would feature challanging and niche questions and a time constraint. This feature enhances accessibility and replayability, allowing users to tailor the experience to their skill level or mood.
+Users would be able to choose their preferred challenge level before starting the quiz.
+It would include easy, medium, and hard modes. Easy mode for casual play, straightforward questions, and no time limit. Medium would be for a balanced experience, moderately challenging questions with no time limit. Hard mode would be for seasoned gamers, this would feature challenging and niche questions and a time constraint. This feature enhances accessibility and replayability, allowing users to tailor the experience to their skill level or mood.
 
 ### Time challange(Hard mode)
-For Hard mode, a countdown timer will be there for each question. The user would have to answer before the time runs out e.g. 10 seconds, adding urgency and excitment. If the timer runs out the question is marked incorrect and moves to the next question. This mechanic increases the pressure and rewards fast recall, making the quiz more engaging for competitive or experienced users.
+For Hard mode, a countdown timer will be there for each question. The user would have to answer before the time runs out, e.g., 10 seconds, adding urgency and excitement. If the timer runs out, the question is marked incorrect and moves to the next question. This mechanic increases the pressure and rewards fast recall, making the quiz more engaging for competitive or experienced users.
 
 ###  Scoreboard System
 A scoreboard will track and display high scores across sessions. Users can see their best scores and compare them with others (or their own previous attempts). - The scoreboard may include player initials, score, difficulty level, and date achieved.
@@ -256,7 +256,7 @@ To ensure a smooth experience across devices, I tested the quiz app early and of
 
 ## Manual Testing (Android Device)
 
-A manual walkthrough of the quiz app was performed on an Google Pixel 7 mobile device to confirm responsiveness, usability, and visual clarity.  
+A manual walkthrough of the quiz app was performed on a Google Pixel 7 mobile device to confirm responsiveness, usability, and visual clarity.  
 The GIF below demonstrates the application being used on an actual device:
 
 ![Watch Android Manual Testing Video](src/docs/video-game-trivia-testing.gif)
@@ -370,21 +370,21 @@ This visual evidence supports the results documented in the Responsive Testing T
 
 ### CSS
 
-I have used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/). It returned errors relating to an old way of anti-alisasing of font. I was using this to make sure the pixelated font always appeared crisp on all browers otherwise it would take away from the style of the quiz. I updated it by deleting it and replacing it with -webkit-font-smoothing: antialiased;
- to keep the crisp edges of my pixelated font. The other errors were relating to extensions for different browers, the use of the same colour for border and background on the .answer-btn.correct and .answer-btn.incorrect. I removed the border as i liked how it looked as it was and the border was deemed unnecessary. I ran the test again  after the improvements and it passed.
+I have used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/).  It returned errors relating to an old way of anti-aliasing fonts. I was using this to make sure the pixelated font always appeared crisp on all browsers; otherwise, it would take away from the style of the quiz.  I updated it by deleting it and replacing it with -webkit-font-smoothing: antialiased;
+ to keep the crisp edges of my pixelated font. The other errors were relating to extensions for different browsers, the use of the same colour for border and background on the .answer-btn.correct and .answer-btn.incorrect. I removed the border as I liked how it looked as it was, and the border was deemed unnecessary. I ran the test again after the improvements, and it passed.
 ![Screenshot of CSS validation test](src/docs/css-error-validation.png)
 ![Screenshot of CSS validation test](src/docs/css-passed-validation.png)
 
 ### HTML
 
-I have used [W3C HTML Validation Service](https://validator.w3.org/). The tests came back with no errors. There was 3 info messages about trailing slash on void elements but that doesnt indicate any problems just showing best practices. Having used vite for my React js app i have no changed the trailing slashes on the index HTML as it was set up that way and doesnt pose any problems to the functioning of the app.
+I have used [W3C HTML Validation Service](https://validator.w3.org/). The tests came back with no errors. There were 3 info messages about trailing slash on void elements, but that doesn't indicate any problems, just showing best practices. Having used Vite for my React.js app, I have not changed the trailing slashes on the index HTML, as it was set up that way and doesn't pose any problems to the functioning of the app.
 
 ![HTML Validation image](src/docs/html-testing-one.png)
 ![HTML Validation image](src/docs/html-testing-two.png)
 
 ### Javascript 
 
-Reactjs code validated by [ESlint](https://eslint.org/) through VSCode plug-in. ESLint was used to ensure code quality and identify potential issues during development. 1 error was indentfied. 
+React.js code validated by [ESlint](https://eslint.org/) through VSCode plug-in. ESLint was used to ensure code quality and identify potential issues during development. 1 error was identified. 
 ![React.js Validation image](src/docs/eslint-validation.png). After correction by removing the unused error parameter, ESLint was run again and returned no errors, demonstrating that the code now adheres to the configured linting rules. 
 
 ![React.js Validation image](src/docs/eslint-passing.png)
@@ -406,7 +406,7 @@ This website was extensively tested for functionality using Chrome developer too
 
 ## Lighthouse Testing
 
-The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthouse Testing tool which inspects and scores the website for the following criteria. I generated two sets of lighthouse reports, one for mobile and one for desktop. 
+The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthouse Testing tool, which inspects and scores the website for the following criteria. I generated two sets of lighthouse reports, one for mobile and one for desktop. 
 
 - Performance - how quickly a website loads and how quickly users can access it.
 - Accessibility - test analyses how well people who use assistive technologies can use your website.
@@ -421,8 +421,8 @@ The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthou
 ![lighthouse testing image index](src/docs/desktop-lighthouse-testing.png)
  
 ## Known Issues / Limitations
-* Ipad Pro content appears slightly too small on the screen. These layout adjustments are still in progress and will be fixed.
-* Nest Hub Max screen content appears small than desired but responsive improvments are planned.
+* iPad Pro content appears slightly too small on the screen. These layout adjustments are still in progress and will be fixed.
+* Nest Hub Max screen content appears smaller than desired, but responsive improvements are planned.
 * one ARIA alert to provide screen-reader feedback, but because it is a single-page application, there are currently no ARIA page regions. This may affect navigation for assistive-technology users. Improvements are planned for future updates.
 
 
@@ -430,7 +430,7 @@ The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthou
 
 ### To deploy the project
 
-The  Video Game Trivia  deployed early in the process using vite and GitHub pages via the following steps:
+The  Video Game Trivia was deployed early in the process using Vite and GitHub Pages via the following steps:
 
 1. Install GitHub Pages Deployment Tool:
  - In your project, install gh-pages with the following command.  
@@ -455,7 +455,7 @@ The  Video Game Trivia  deployed early in the process using vite and GitHub page
 }
 
 4. Build and Deploy:
-   With the following commands to the terminal:  
+   With the following commands in the terminal:  
    npm run build  
    npm run deploy
 
@@ -476,7 +476,7 @@ The  Video Game Trivia  deployed early in the process using vite and GitHub page
 
 The website is now live at https://court-pencil.github.io/Game-Trivia/.
 
-Any changes required to the website, they can be made, committed and pushed to GitHub.
+Any changes required to the website can be made, committed, and pushed to GitHub.
 
 ### Redeploying After Changes
 
@@ -505,10 +505,6 @@ Forking the GitHub repository allows you to create a duplicate of a local reposi
 - Press Enter to create your local clone.
 
 ## Credits
-
-- Feedback, advice and support:
-
-  
 
 - Code inspiration and learning content:
 - Visual content:
