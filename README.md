@@ -223,6 +223,8 @@ This feature encourages replayability and adds a competitive edge, perfect for s
 - [Open Trivia DB](https://opentdb.com/ "Open Trivia DB")
 - [WAVE Accessibility Tool](https://wave.webaim.org/ "WAVE Accessibility Tool")
 - [Am I Responsive](https://ui.dev/amiresponsive "Am I responsive")
+- [ESLint](https://eslint.org/docs/latest/use/getting-started)
+- [Vite](https://vite.dev/)
 
 ## Testing
 
@@ -391,7 +393,7 @@ ESLint ran successfully and returned no errors or warnings, indicating the code 
 
 ## Accessibility Testing
 
-I used the web accessibilty evalution tool [WAVE](https://wave.webaim.org/) to test if my quiz app is accessible to people with diverse needs. One alert was raised. I also used the colour contrast checker on WAVE's site for additional checking.
+I used the web accessibilty evalution tool [WAVE](https://wave.webaim.org/) to test if my quiz app is accessible to people with diverse needs. One alert was raised, because this is a single page application there are no defined page regions to support improved navigation for assistive technologies. I also used the colour contrast checker on WAVE's site for additional checking.
 
 ![WAVE](src/docs/wave-accessibility-checker.png)
 ![WAVE](src/docs/wave-contrast-checker-yellow.png "Yellow font")
@@ -421,7 +423,7 @@ The Video Game Trivia website has been tested in Chrome Dev Tools using Lighthou
 ## Known Issues / Limitations
 * Ipad Pro content appears slightly too small on the screen. These layout adjustments are still in progress and will be fixed.
 * Nest Hub Max screen content appears small than desired but responsive improvments are planned.
-* One ARIA alert is implemented, but there are currently no defined page regions. Additional accessibility improvements will be added in future updates.
+* one ARIA alert to provide screen-reader feedback, but because it is a single-page application, there are currently no ARIA page regions. This may affect navigation for assistive-technology users. Improvements are planned for future updates.
 
 
 ## Deployment
